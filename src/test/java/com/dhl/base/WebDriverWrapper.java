@@ -16,7 +16,7 @@ public class WebDriverWrapper {
 	
 	@BeforeMethod
 	@Parameters({"browser"})
-	public void setup(@Optional("ch")String browserName)
+	public void setup(@Optional("ff")String browserName)
 	{	
 		if(browserName.equalsIgnoreCase("ff"))
 		{
