@@ -60,6 +60,7 @@ public class LoginTest extends WebDriverWrapper {
 		Object[][] main = ExcelUtils.getSheetIntoObjectArray("testdata/openemrdata.xlsx", "invalidCredentialData");
 		return main;
 	}
+	
 
 	@Test(dataProvider = "invalidCredentialData")
 	public void invalidCredentialTest(String username, String password, String language, String expectedValue) {
