@@ -13,7 +13,6 @@ import org.testng.annotations.Parameters;
 
 public class WebDriverWrapper {
 	protected WebDriver driver;
-	
 	@BeforeMethod
 	@Parameters({"browser"})
 	public void setup(@Optional("ch")String browserName)
